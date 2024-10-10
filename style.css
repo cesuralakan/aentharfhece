@@ -1,0 +1,77 @@
+ body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            flex-direction: column;
+        }
+        #gameArea {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #letters {
+            margin-bottom: 20px;
+        }
+        .letter-box {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            border: 2px solid #333;
+            margin: 5px;
+            text-align: center;
+            line-height: 70px;
+            font-size: 48px; /* Harf boyutu büyütüldü */
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .underscore-box {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            border: 2px dashed #333; /* Düz çizgi yerine kesik çizgi */
+            margin: 5px;
+            line-height: 70px;
+            font-size: 48px; /* Harf boyutu büyütüldü */
+            text-align: center;
+            background-color: #fff; /* Arka plan rengi beyaz */
+            transition: background-color 0.3s;
+        }
+        .correct {
+            background-color: #4CAF50; /* Yeşil */
+            color: white;
+        }
+        .incorrect {
+            background-color: #f44336; /* Kırmızı */
+            color: white;
+        }
+        #wordStatus {
+            margin-top: 20px;
+            font-size: 24px; /* Font boyutu büyütüldü */
+        }
+        #congratsMessage {
+            font-size: 36px;
+            color: #4CAF50; /* Yeşil */
+            display: none;
+            margin-top: 20px;
+        }
+        #restartButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 24px; /* Font boyutu büyütüldü */
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: none;
+            transition: background-color 0.3s;
+        }
+        #restartButton:hover {
+            background-color: #45a049;
+        }
